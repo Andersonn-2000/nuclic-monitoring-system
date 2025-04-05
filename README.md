@@ -1,35 +1,32 @@
 # Nuclic Monitoring System
 
-This project is a Telegram bot focused on monitoring the stock of the group's cabinet in the faculty.
+This project manages and monitors the stock of electronic components in a cabinet for the Nuclic college research group. It is part of a larger system where stock actions are tracked and maintained through a Telegram bot, ensuring efficient storage-related operations.
 
-## Setting up the Python Environment
+## Installation and Setup
 
-To set up the Python environment, follow these steps:
+Follow these steps to set up the project environment:
 
-1. Create a virtual environment using `venv`:
-    ```sh
-    python -m venv venv
+### Prerequisites
+
+1. Ensure you have Python installed (version 3.12 or higher is recommended).
+2. Install [Poetry](https://python-poetry.org/) for dependency management. 
+
+### Steps to Install Dependencies
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Andersonn-2000/nuclic-monitoring-system.git
+    cd nuclic-monitoring-system
     ```
 
-2. Activate the virtual environment:
-    - On Windows:
-        ```sh
-        .\venv\Scripts\activate
-        ```
-    - On macOS and Linux:
-        ```sh
-        source venv/bin/activate
-        ```
-
-3. Install the required libraries using `requirements.txt`:
-    ```sh
-    pip install -r requirements.txt
+2. Install the dependencies using Poetry:
+    ```bash
+    poetry install
     ```
 
-## Requirements
+3. Activate the virtual environment:
+    ```bash
+    poetry env activate
+    ```
 
-Make sure to have a `requirements.txt` file with the necessary libraries. Here is an example:
-
-```txt
-python-telegram-bot==13.7
-requests==2.25.1
+Now you're ready to proceed with running the application or performing further configurations.
